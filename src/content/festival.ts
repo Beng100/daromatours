@@ -1,5 +1,6 @@
 export const festivalPage = {
   title: 'פסטיבל קיץ של כוכבים 2026',
+  heroImage: '/images/gallery/desert-camp-6.webp',
   intro:
     'גם השנה אנחנו שמחים להוביל את אירועי מטר המטאורים "פרסאידים" 2026 עם שלל פעילויות לכל המשפחה!',
   meteorShowerHeading: 'באיזה תאריכים מתקיים מטר הפרסאידים?',

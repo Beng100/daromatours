@@ -10,8 +10,8 @@ const BASE_URL = 'https://www.daromatours.com';
 export const seoEntries: SeoEntry[] = [
   {
     path: '/',
-    title: `${SITE_TITLE_SUFFIX} | תיירות מדברית, אירועים וימי גיבוש`,
-    description: 'דרומה – הפקות וחוויות: ימי גיבוש לחברות וארגונים, הפקות אירועים בשטח, תצפיות כוכבים וטיולי מדבר במצפה רמון וברמת הגולן.'
+    title: `DAROMA – Luxury Desert Events | ${SITE_TITLE_SUFFIX}`,
+    description: 'דרומה – הפקות אירועי יוקרה במדבר לחברות מובילות ולארגוני הייטק: ימי גיבוש, אירוח VIP, תצפיות כוכבים והפקות אירועים בשטח.'
   },
   {
     path: '/productions',
@@ -20,8 +20,8 @@ export const seoEntries: SeoEntry[] = [
   },
   {
     path: '/corporate',
-    title: `ימי גיבוש לחברות וארגונים | ${SITE_TITLE_SUFFIX}`,
-    description: 'יום גיבוש מדברי מותאם אישית לעובדים שלכם – שאלון אפיון קצר ואנחנו כבר דואגים לכל השאר, מהרעיון ועד הביצוע.'
+    title: `אירועי חברות והייטק | ${SITE_TITLE_SUFFIX}`,
+    description: 'הפקת ימי גיבוש ואירועי חברה לארגוני הייטק וחברות מובילות – שאלון אפיון קצר ואנחנו דואגים לכל השאר, מהרעיון ועד הביצוע.'
   },
   {
     path: '/attractions',

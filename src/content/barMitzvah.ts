@@ -1,5 +1,6 @@
 export const barMitzvahPage = {
   heading: 'טיול בר מצווה',
+  heroImage: '/images/attractions/attraction-2.webp',
   intro:
     'במיוחד בשביל זה בנינו לכם טיול בר מצווה חוויתי ומלמד במרחבים המדבריים של מצפה רמון, הכולל מגוון תחנות שבכל אחת מהן תקבלו כלים נכונים להתמודדות והצלחה במעבר לחיים הבוגרים.',
   themesHeading: 'נושאים מרכזיים בטיול',

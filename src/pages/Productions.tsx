@@ -19,19 +19,31 @@ export default function Productions() {
       </div>
 
       <Section className="pt-0">
-        <SectionHeading eyebrow="הפקות ואירועים" title={productionsPage.heading} />
-        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-8 text-night-600">
-          {productionsPage.intro.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
+            <SectionHeading eyebrow="הפקות ואירועים" title={productionsPage.heading} />
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-night-600">
+              {productionsPage.intro.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+            {productionsPage.requiresReview && <ReviewFlag note={productionsPage.reviewNote} />}
+          </div>
+          <img
+            src={productionsPage.heroImage}
+            alt="הפקת אירוע בשטח על ידי דרומה"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+            loading="lazy"
+            width={720}
+            height={540}
+          />
         </div>
-        {productionsPage.requiresReview && <ReviewFlag note={productionsPage.reviewNote} />}
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {productionsPage.capabilities.map((cap) => (
             <Card key={cap.title} className="p-6">
               <h3 className="font-display text-lg font-semibold text-night-800">{cap.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-night-400">{cap.description}</p>
+              <p className="mt-2 text-sm leading-relaxed text-night-400">{cap.description}</p>
             </Card>
           ))}
         </div>

@@ -40,7 +40,7 @@ export default function AttractionDetail() {
 
             <div className="mt-6 space-y-4 text-night-600">
               {attraction.description.map((paragraph, index) => (
-                <p key={index} className="leading-8">
+                <p key={index} className="leading-relaxed">
                   {paragraph}
                 </p>
               ))}
@@ -51,7 +51,7 @@ export default function AttractionDetail() {
                 <h2 className="font-display text-xl font-semibold text-night-800">מה כלול</h2>
                 <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                   {attraction.includes.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm leading-7 text-night-600">
+                    <li key={item} className="flex items-start gap-2 text-sm leading-relaxed text-night-600">
                       <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-ember-500" aria-hidden="true" />
                       {item}
                     </li>

@@ -4,9 +4,9 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  { name: 'עיריית ירושלים', logo: '/images/clients/jerusalem-municipality.png' },
-  { name: 'דימונה', logo: '/images/clients/dimona.png' },
-  { name: 'נחל זמרי', logo: '/images/clients/nachal-zimri.png' }
+  { name: 'עיריית ירושלים', logo: '/images/clients/jerusalem-municipality.webp' },
+  { name: 'דימונה', logo: '/images/clients/dimona.webp' },
+  { name: 'נחל זמרי', logo: '/images/clients/nachal-zimri.webp' }
 ];
 
 export const clientsNote = {

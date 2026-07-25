@@ -30,7 +30,7 @@ export default function ArticleDetail() {
             </p>
           )}
 
-          {article.excerpt && <p className="mt-6 text-lg leading-8 text-night-600">{article.excerpt}</p>}
+          {article.excerpt && <p className="mt-6 text-lg leading-relaxed text-night-600">{article.excerpt}</p>}
 
           <Card className="mt-8 p-6">
             <p className="text-night-600">

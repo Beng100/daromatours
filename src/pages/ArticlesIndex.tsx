@@ -32,7 +32,7 @@ export default function ArticlesIndex() {
                     {article.title}
                   </Link>
                 </h2>
-                {article.excerpt && <p className="mt-3 text-sm leading-7 text-night-400">{article.excerpt}</p>}
+                {article.excerpt && <p className="mt-3 text-sm leading-relaxed text-night-400">{article.excerpt}</p>}
                 {!article.bodyMigrated && (
                   <div className="mt-3">
                     <Badge tone="sand">התוכן המלא בהכנה</Badge>

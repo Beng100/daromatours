@@ -17,17 +17,29 @@ export default function Education() {
       </div>
 
       <Section className="pt-0">
-        <SectionHeading eyebrow="מוסדות חינוך" title={educationPage.schoolHeading} />
-        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-8 text-night-600">
-          {educationPage.schoolParagraphs.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
+            <SectionHeading eyebrow="מוסדות חינוך" title={educationPage.schoolHeading} />
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-night-600">
+              {educationPage.schoolParagraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </div>
+          <img
+            src={educationPage.heroImage}
+            alt="פלנטריום נייד של דרומה לבתי ספר"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+            loading="lazy"
+            width={720}
+            height={540}
+          />
         </div>
       </Section>
 
       <Section tone="sand">
         <SectionHeading eyebrow="קייטנות ומוסדות לימוד" title={educationPage.campHeading} />
-        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-8 text-night-600">
+        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-night-600">
           {educationPage.campParagraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
@@ -37,7 +49,7 @@ export default function Education() {
 
       <Section>
         <SectionHeading eyebrow="ביטחון" title={educationPage.idfHeading} />
-        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-8 text-night-600">
+        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-night-600">
           {educationPage.idfParagraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}

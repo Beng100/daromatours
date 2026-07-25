@@ -8,3 +8,4 @@ dist-ssr
 .credentials/
 .DS_Store
 *.log
+.claude/

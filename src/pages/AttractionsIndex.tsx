@@ -35,7 +35,7 @@ export default function AttractionsIndex() {
               />
               <div className="flex flex-1 flex-col p-5">
                 <h2 className="font-display text-lg font-semibold text-night-800">{attraction.title}</h2>
-                <p className="mt-2 flex-1 text-sm leading-7 text-night-400">{attraction.tagline}</p>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-night-400">{attraction.tagline}</p>
                 <Button to={`/attractions/${attraction.slug}`} variant="secondary" size="md" className="mt-4 self-start">
                   לפרטים
                   <ArrowLeft size={16} aria-hidden="true" />

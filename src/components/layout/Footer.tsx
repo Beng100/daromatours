@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from '../ui/SocialIcons';
-import { footerNav } from '../../content/navigation';
+import { footerNavPrimary, footerNavSecondary } from '../../content/navigation';
 import { business } from '../../config/business';
 
 export function Footer() {
@@ -9,8 +9,8 @@ export function Footer() {
 
   return (
     <footer className="bg-night-800 text-sand-100">
-      <div className="container grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
-        <div>
+      <div className="container grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="lg:col-span-1">
           <div className="flex items-center gap-3">
             <img
               src="/images/logo/daroma-logo.webp"
@@ -22,11 +22,11 @@ export function Footer() {
             />
             <div>
               <p className="font-display text-lg font-bold text-white">{business.brandName}</p>
-              <p className="text-sm text-ember-100">{business.brandTagline}</p>
+              <p className="text-xs uppercase tracking-[0.15em] text-ember-200">{business.positioningEnglish}</p>
             </div>
           </div>
-          <p className="mt-4 text-sm leading-7 text-sand-200">
-            הפקות אירועים בשטח וחוויות מדבריות לקבוצות, חברות, מוסדות חינוך, צה״ל ומשפחות.
+          <p className="mt-4 text-sm leading-relaxed text-sand-200">
+            הפקות אירועי יוקרה במדבר לחברות מובילות וארגוני הייטק — מהרעיון ועד הביצוע בשטח.
           </p>
           <div className="mt-5 flex items-center gap-3">
             <a
@@ -62,7 +62,20 @@ export function Footer() {
         <div>
           <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-ember-200">מפת אתר</h2>
           <ul className="mt-4 space-y-2 text-sm">
-            {footerNav.map((item) => (
+            {footerNavPrimary.map((item) => (
+              <li key={item.href}>
+                <Link to={item.href} className="text-sand-200 transition hover:text-white">
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-ember-200">עוד</h2>
+          <ul className="mt-4 space-y-2 text-sm">
+            {footerNavSecondary.map((item) => (
               <li key={item.href}>
                 <Link to={item.href} className="text-sand-200 transition hover:text-white">
                   {item.label}

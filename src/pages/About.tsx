@@ -16,11 +16,23 @@ export default function About() {
       </div>
 
       <Section className="pt-0">
-        <SectionHeading eyebrow="אודות דרומה" title={aboutPage.heading} description={aboutPage.brandStatement} />
-        <div className="mt-8 max-w-3xl space-y-4 text-lg leading-8 text-night-600">
-          {aboutPage.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
+            <SectionHeading eyebrow="אודות דרומה" title={aboutPage.heading} description={aboutPage.brandStatement} />
+            <div className="mt-8 space-y-4 text-lg leading-relaxed text-night-600">
+              {aboutPage.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </div>
+          <img
+            src={aboutPage.heroImage}
+            alt="צוות דרומה בפעילות בשטח המדבר"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+            loading="lazy"
+            width={720}
+            height={540}
+          />
         </div>
       </Section>
 

@@ -23,7 +23,7 @@ export default function Team() {
 
       <Section className="pt-0">
         <SectionHeading eyebrow="הצוות שלנו" title={teamIntro.heading} />
-        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-8 text-night-600">
+        <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-night-600">
           {teamIntro.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
@@ -58,7 +58,7 @@ export default function Team() {
                 {getInitials(member.name)}
               </div>
               <h3 className="mt-4 font-display text-lg font-semibold text-night-800">{member.name}</h3>
-              <div className="mt-2 space-y-2 text-sm leading-7 text-night-400">
+              <div className="mt-2 space-y-2 text-sm leading-relaxed text-night-400">
                 {member.bio.map((line, i) => (
                   <p key={i}>{line}</p>
                 ))}

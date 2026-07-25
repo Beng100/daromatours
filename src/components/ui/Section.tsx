@@ -39,7 +39,7 @@ export function SectionHeading({ eyebrow, title, description, align = 'start', t
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-ember-500">{eyebrow}</p>
       )}
       <h2 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl">{title}</h2>
-      {description && <p className={`mt-4 text-lg leading-8 ${descColor}`}>{description}</p>}
+      {description && <p className={`mt-4 text-lg leading-relaxed ${descColor}`}>{description}</p>}
     </div>
   );
 }

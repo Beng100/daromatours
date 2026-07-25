@@ -17,14 +17,24 @@ export default function Festival() {
       </div>
 
       <Section className="pt-0">
-        <SectionHeading eyebrow="אירוע מיוחד" title={festivalPage.title} description={festivalPage.intro} />
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <SectionHeading eyebrow="אירוע מיוחד" title={festivalPage.title} description={festivalPage.intro} />
+          <img
+            src={festivalPage.heroImage}
+            alt="פסטיבל קיץ של כוכבים של דרומה במצפה רמון"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+            loading="lazy"
+            width={720}
+            height={540}
+          />
+        </div>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-2">
+        <div className="mt-14 grid gap-10 lg:grid-cols-2">
           <div>
             <h2 className="font-display text-xl font-semibold text-night-800">{festivalPage.meteorShowerHeading}</h2>
             <div className="mt-4 space-y-3 text-night-600">
               {festivalPage.meteorShowerParagraphs.map((p, i) => (
-                <p key={i} className="leading-7">
+                <p key={i} className="leading-relaxed">
                   {p}
                 </p>
               ))}
@@ -36,7 +46,7 @@ export default function Festival() {
             <p className="mt-2 text-ember-500">{festivalPage.eventSubheading}</p>
             <ul className="mt-5 space-y-3">
               {festivalPage.includes.map((item) => (
-                <li key={item} className="flex items-start gap-2 text-sm leading-7 text-night-600">
+                <li key={item} className="flex items-start gap-2 text-sm leading-relaxed text-night-600">
                   <Sparkles size={18} className="mt-0.5 shrink-0 text-fire-500" aria-hidden="true" />
                   {item}
                 </li>

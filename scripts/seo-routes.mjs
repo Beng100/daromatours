@@ -36,9 +36,9 @@ export const articleSlugs = [
 ];
 
 const staticEntries = [
-  { path: '/', title: `${SITE_TITLE_SUFFIX} | תיירות מדברית, אירועים וימי גיבוש`, description: 'דרומה – הפקות וחוויות: ימי גיבוש לחברות וארגונים, הפקות אירועים בשטח, תצפיות כוכבים וטיולי מדבר במצפה רמון וברמת הגולן.', changefreq: 'weekly', priority: '1.0' },
+  { path: '/', title: `DAROMA – Luxury Desert Events | ${SITE_TITLE_SUFFIX}`, description: 'דרומה – הפקות אירועי יוקרה במדבר לחברות מובילות ולארגוני הייטק: ימי גיבוש, אירוח VIP, תצפיות כוכבים והפקות אירועים בשטח.', changefreq: 'weekly', priority: '1.0' },
   { path: '/productions', title: `הפקות אירועים בשטח | ${SITE_TITLE_SUFFIX}`, description: 'הפקת אירועים מקצה לקצה במדבר: אירוח VIP, ארוחות שף, מוזיקה, תוכן ולוגיסטיקה מלאה.', changefreq: 'monthly', priority: '0.9' },
-  { path: '/corporate', title: `ימי גיבוש לחברות וארגונים | ${SITE_TITLE_SUFFIX}`, description: 'יום גיבוש מדברי מותאם אישית לעובדים שלכם.', changefreq: 'monthly', priority: '0.9' },
+  { path: '/corporate', title: `אירועי חברות והייטק | ${SITE_TITLE_SUFFIX}`, description: 'הפקת ימי גיבוש ואירועי חברה לארגוני הייטק וחברות מובילות.', changefreq: 'monthly', priority: '0.9' },
   { path: '/attractions', title: `אטרקציות וחוויות מדבריות | ${SITE_TITLE_SUFFIX}`, description: 'תצפיות כוכבים, אסטרומנטיקה, טיולי ג׳יפים, אירוח VIP ועוד.', changefreq: 'monthly', priority: '0.9' },
   { path: '/bar-mitzvah', title: `טיול בר מצווה במצפה רמון | ${SITE_TITLE_SUFFIX}`, description: 'טיול בר/בת מצווה חוויתי במדבר: הצבת מטרות, ביטחון עצמי ומנהיגות.', changefreq: 'monthly', priority: '0.6' },
   { path: '/festival', title: `פסטיבל קיץ של כוכבים 2026 | ${SITE_TITLE_SUFFIX}`, description: 'פסטיבל קיץ של כוכבים במצפה רמון – תצפית משפחתית ומטר הפרסאידים.', changefreq: 'weekly', priority: '0.8' },

@@ -1,5 +1,6 @@
 export const aboutPage = {
   heading: 'קצת עלינו',
+  heroImage: '/images/gallery/desert-camp-5.webp',
   brandStatement:
     'דרומה היא חברת הפקות וחוויות מדבריות – אנחנו בונים אירועי חברה, ימי גיבוש, אירוח VIP ותצפיות כוכבים, לצד תיירות מדברית אותנטית שהתחלנו ממנה.',
   paragraphs: [

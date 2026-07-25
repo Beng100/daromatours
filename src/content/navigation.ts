@@ -9,10 +9,12 @@ export interface NavItem {
   children?: NavChild[];
 }
 
+// ניווט ראשי מצומצם במכוון (6 פריטים) — מותאם לקהל עסקי/הייטק שמצפה לניווט
+// נקי וברור. עמודים נוספים (פסטיבל, בר מצווה, חינוך, מאמרים) נגישים דרך ה-Footer
+// ודרך קישורים הקשריים בתוך העמודים, לא מהניווט העליון.
 export const mainNav: NavItem[] = [
   { label: 'בית', href: '/' },
-  { label: 'הפקות ואירועים', href: '/productions' },
-  { label: 'חברות וארגונים', href: '/corporate' },
+  { label: 'אירועי חברות והייטק', href: '/corporate' },
   {
     label: 'אטרקציות וחוויות',
     href: '/attractions',
@@ -26,23 +28,25 @@ export const mainNav: NavItem[] = [
       { label: 'קבלות פנים וארוחות בוקר', href: '/attractions/welcome-breakfast' }
     ]
   },
-  { label: 'טיול בר מצווה', href: '/bar-mitzvah' },
-  { label: 'פסטיבל קיץ של כוכבים', href: '/festival' },
-  { label: 'חינוך וצה״ל', href: '/education' },
   { label: 'גלריה', href: '/gallery' },
   { label: 'אודות', href: '/about' },
-  { label: 'הצוות', href: '/team' },
-  { label: 'מאמרים', href: '/articles' },
   { label: 'צור קשר', href: '/contact' }
 ];
 
-export const footerNav: NavChild[] = [
+export const footerNavPrimary: NavChild[] = [
   { label: 'דף הבית', href: '/' },
-  { label: 'הפקות ואירועים', href: '/productions' },
-  { label: 'חברות וארגונים', href: '/corporate' },
+  { label: 'אירועי חברות והייטק', href: '/corporate' },
+  { label: 'הפקות אירועים בשטח', href: '/productions' },
   { label: 'אטרקציות', href: '/attractions' },
-  { label: 'חינוך וצה״ל', href: '/education' },
+  { label: 'גלריה', href: '/gallery' },
   { label: 'אודות', href: '/about' },
-  { label: 'מאמרים', href: '/articles' },
+  { label: 'הצוות', href: '/team' },
   { label: 'צור קשר', href: '/contact' }
+];
+
+export const footerNavSecondary: NavChild[] = [
+  { label: 'פסטיבל קיץ של כוכבים', href: '/festival' },
+  { label: 'טיול בר מצווה', href: '/bar-mitzvah' },
+  { label: 'חינוך וצה״ל', href: '/education' },
+  { label: 'מאמרים', href: '/articles' }
 ];
