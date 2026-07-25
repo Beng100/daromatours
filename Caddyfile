@@ -1,0 +1,87 @@
+# Production static server config (replaces the nixpacks default, which uses
+# `try_files {path} /index.html` and therefore never serves the prerendered
+# per-route dist/<page>/index.html files).
+# Started via the Coolify custom start command:
+#   caddy run --config /app/Caddyfile --adapter caddyfile
+{
+	admin off
+	persist_config off
+	auto_https off
+	log {
+		format json
+	}
+}
+
+:{$PORT:3000} {
+	log {
+		format json
+	}
+
+	root * /app/dist
+	encode gzip zstd
+
+	# Canonical host: 301 non-www to www (TLS terminates at Traefik; the Host
+	# header passes through, so ACME renewals are unaffected).
+	@nonwww host daromatours.com
+	redir @nonwww https://www.daromatours.com{uri} permanent
+
+	# Canonical paths: strip trailing slashes (/attractions/ -> /attractions).
+	@trailing path_regexp trail ^(.+)/$
+	redir @trailing {re.trail.1} permanent
+
+	# --- 301s from the old Wix site (see redirect-map.csv for the full list) ---
+	redir /stargazing /attractions/stargazing permanent
+	redir /jeeptour /attractions/jeep-tours permanent
+	redir /luxurydinner /attractions/vip-hosting permanent
+	redir /attractions/deserthappyhour /attractions/desert-happy-hour permanent
+	redir /organizationevents /corporate permanent
+	redir /daromateam /about permanent
+	redir /spaceactivitiesschool /education permanent
+	redir /summerevents2025 /festival permanent
+	redir /blog /articles permanent
+	redir /recommendations /articles permanent
+
+	@heEncoded1 path_regexp heSchool ^/%D7%AA%D7%A6%D7%A4%D7%99%D7%95%D7%AA-%D7%9C%D7%9E%D7%95%D7%A1%D7%93%D7%95%D7%AA-%D7%9C%D7%99%D7%9E%D7%95%D7%93-%D7%95%D7%A7%D7%99%D7%99%D7%98%D7%A0%D7%95%D7%AA$
+	redir @heEncoded1 /education permanent
+
+	@heEncoded2 path_regexp heBarMitzvah ^/%D7%9E%D7%A1%D7%A2-%D7%91%D7%A8-%D7%9E%D7%A6%D7%95%D7%95%D7%94$
+	redir @heEncoded2 /bar-mitzvah permanent
+
+	@heEncoded3 path_regexp heAstro ^/%D7%90%D7%A1%D7%98%D7%A8%D7%95%D7%9E%D7%A0%D7%98%D7%99%D7%A7%D7%94$
+	redir @heEncoded3 /attractions/astromentica permanent
+
+	# Old one-off 2022 stargazing event listing pages: all bulk-redirected to the
+	# current, living stargazing/festival pages instead of 404ing.
+	@oldEvents path_regexp events ^/event-details/
+	redir @oldEvents /festival permanent
+
+	# Old Wix "copy-of-*" duplicate pages already 404'd on the live site (never
+	# fully published) — send any lingering inbound links to the closest live page.
+	redir /copy-of-דף-בית-ראשי / permanent
+	redir /copy-of-אטרקציות /attractions permanent
+	redir /copy-of-אטרקציות-1 /attractions permanent
+	redir /copy-of-הזמנות-ויצירת-קשר /contact permanent
+	redir /copy-of-ימי-גיבוש-בדרום /corporate permanent
+	redir /copy-of-ימי-גיבוש-לעובדים-ומוסדות /corporate permanent
+	redir /copy-of-ימי-כיף-ברמת-הגולן /corporate permanent
+	redir /copy-of-אירועי-קיץ-2023 /festival permanent
+	redir /copy-of-סיור-ביקב /attractions permanent
+
+	# Hashed build assets never change; HTML must always revalidate.
+	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+	header /images/* Cache-Control "public, max-age=2592000"
+
+	# Everything else (HTML shells, sitemap, favicons): revalidate on every
+	# request so visitors see a new deploy immediately instead of a
+	# heuristically-cached stale page. ETag/304 keeps this cheap.
+	@revalidate not path /assets/*
+	header @revalidate Cache-Control "no-cache"
+
+	file_server
+
+	# Serve the prerendered per-route index.html when one exists; otherwise SPA
+	# fallback. Rewrites to the index FILE directly ({path}/index.html), never
+	# to the directory ({path}/) - a directory rewrite makes file_server 301
+	# clean URLs to trailing-slash ones, which loops against the redirect above.
+	try_files {path} {path}/index.html /index.html
+}

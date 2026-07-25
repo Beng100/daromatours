@@ -1,0 +1,80 @@
+@import '@fontsource/rubik/400.css';
+@import '@fontsource/rubik/600.css';
+@import '@fontsource/rubik/700.css';
+@import '@fontsource/heebo/300.css';
+@import '@fontsource/heebo/400.css';
+@import '@fontsource/heebo/500.css';
+@import '@fontsource/heebo/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #FBF7F0;
+  color: #241E1A;
+  font-family: 'Heebo', system-ui, sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(196, 96, 42, 0.25);
+  color: #241E1A;
+}
+
+/* Focus visibility: never remove outlines, only restyle them */
+:focus-visible {
+  outline: 3px solid #C4602A;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  right: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: #241E1A;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}

@@ -1,0 +1,52 @@
+old_url,new_url,redirect_type,notes
+https://www.daromatours.com/,https://www.daromatours.com/,301,דף הבית - ללא שינוי בכתובת
+https://www.daromatours.com/attractions,https://www.daromatours.com/attractions,301,ללא שינוי בכתובת
+https://www.daromatours.com/stargazing,https://www.daromatours.com/attractions/stargazing,301,הועבר תחת מבנה /attractions/
+https://www.daromatours.com/אסטרומנטיקה,https://www.daromatours.com/attractions/astromentica,301,הומר לסלאג לועזי יציב; יש לאמת שהפניית ה-Hebrew slug עובדת בפועל אחרי הפריסה
+https://www.daromatours.com/attractions/deserthappyhour,https://www.daromatours.com/attractions/desert-happy-hour,301,נוסף מקף לסלאג
+https://www.daromatours.com/luxurydinner,https://www.daromatours.com/attractions/vip-hosting,301,בעמוד המקורי כותרת ה-SEO הייתה שגויה ("טיולי ג'יפים") בעוד התוכן הוא אירוח VIP - תוקן בכתובת ובכותרת החדשה
+https://www.daromatours.com/jeeptour,https://www.daromatours.com/attractions/jeep-tours,301,הומר לסלאג לועזי עקבי
+https://www.daromatours.com/organizationevents,https://www.daromatours.com/corporate,301,עמוד ימי גיבוש לעובדים - שם עקבי יותר במבנה החדש
+https://www.daromatours.com/daromateam,https://www.daromatours.com/about,301,"עמוד ""קצת עלינו"" המקורי פוצל לשני עמודים חדשים: /about (סיפור החברה) ו-/team (אנשי הצוות). ההפניה הראשית מובילה ל-/about; מומלץ להוסיף קישור בולט מ-/about ל-/team"
+https://www.daromatours.com/spaceactivitiesschool,https://www.daromatours.com/education,301,אוחד עם תוכן קייטנות/צה"ל תחת עמוד חינוך אחד
+https://www.daromatours.com/תצפיות-למוסדות-לימוד-וקייטנות,https://www.daromatours.com/education,301,אוחד עם עמוד הפלנטריום הבית ספרי
+https://www.daromatours.com/מסע-בר-מצווה,https://www.daromatours.com/bar-mitzvah,301,הומר לסלאג לועזי יציב
+https://www.daromatours.com/summerevents2025,https://www.daromatours.com/festival,301,עמוד הפסטיבל עודכן לתאריכי 2026 בפועל (התוכן במקור כבר הכיל תאריכי 2026)
+https://www.daromatours.com/contact,https://www.daromatours.com/contact,301,ללא שינוי בכתובת
+https://www.daromatours.com/blog,https://www.daromatours.com/articles,301,שם עקבי יותר עם שאר מבנה האתר
+https://www.daromatours.com/מאמרים-1,https://www.daromatours.com/articles,301,עמוד אינדקס מאמרים חלופי באתר הישן - אוחד לעמוד אחד
+https://www.daromatours.com/recommendations,https://www.daromatours.com/articles,301,"עמוד ""מאמרי טיולים"" (המלצות אתרים: בורות לוץ, נחל חצץ, מכתש רמון ועוד) - תוכן זה לא נבנה כעמוד ייעודי בסבב הנוכחי; מופנה זמנית לעמוד מאמרים. ראו content-migration-report.md"
+https://www.daromatours.com/copy-of-דף-בית-ראשי,https://www.daromatours.com/,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי - הפניה מונעת ליתר ביטחון
+https://www.daromatours.com/copy-of-אטרקציות,https://www.daromatours.com/attractions,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-אטרקציות-1,https://www.daromatours.com/attractions,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-הזמנות-ויצירת-קשר,https://www.daromatours.com/contact,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-ימי-גיבוש-בדרום,https://www.daromatours.com/corporate,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-ימי-גיבוש-לעובדים-ומוסדות,https://www.daromatours.com/corporate,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-ימי-כיף-ברמת-הגולן,https://www.daromatours.com/corporate,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-אירוע-בר-מצווה-במצפה-רמון,https://www.daromatours.com/bar-mitzvah,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-אירועי-קיץ-2023,https://www.daromatours.com/festival,301,עמוד Wix "copy-of" שהיה כבר 404 באתר החי
+https://www.daromatours.com/copy-of-סיור-ביקב,https://www.daromatours.com/attractions,301,"עמוד Wix ""copy-of"" שהיה כבר 404 באתר החי; לא נמצא תוכן אמיתי על סיור ביקב בשום עמוד חי - אם קיים שירות כזה בפועל, יש להוסיף אותו כתוכן חדש (לא הומצא כאן)"
+https://www.daromatours.com/מאמר-שביל-החלב,https://www.daromatours.com/articles/shvil-hachalav,301,עמוד "מאמר" ותיק - ראו content-review.md לגבי אימות תוכן מול פוסט הבלוג המקביל
+https://www.daromatours.com/מאמרי-אסטרונומיה,https://www.daromatours.com/articles,301,זהו למעשה עמוד אינדקס הבלוג עצמו (זהה בתוכן ל-/blog)
+https://www.daromatours.com/מאמר-העגלה-הגדולה,https://www.daromatours.com/articles/great-cart-ursa-major,301,ייתכן חפיפה עם פוסט "הדובה הגדולה" - יש לבדוק כפילות
+https://www.daromatours.com/מאמר-חודש-אלול,https://www.daromatours.com/articles/elul-month,301,
+https://www.daromatours.com/מאמר-מטר-הפרסאידים,https://www.daromatours.com/articles/meteor-perseids-august,301,ייתכן כפילות עם פוסט הבלוג באותו נושא
+https://www.daromatours.com/מאמר-כוכב-שביט,https://www.daromatours.com/articles/comet-neowise,301,ייתכן כפילות עם פוסט הבלוג "שביט NEOWISE"
+https://www.daromatours.com/post/שביט-neowise,https://www.daromatours.com/articles/comet-neowise,301,
+https://www.daromatours.com/post/ענקי-הגזים-צדק-ושבתאי-חוזרים,https://www.daromatours.com/articles/anke-hagazim-tzedek-veshabtai,301,
+https://www.daromatours.com/post/שביל-החלב,https://www.daromatours.com/articles/shvil-hachalav,301,
+https://www.daromatours.com/post/בכסה-ליום-חגנו,https://www.daromatours.com/articles/bekesa-leyom-chageinu,301,
+https://www.daromatours.com/post/הבט-נא-השמימה-וספור-הכוכבים,https://www.daromatours.com/articles/habet-na-hashamaima,301,
+https://www.daromatours.com/post/על-הרים-ומאדים,https://www.daromatours.com/articles/al-harim-umadaim,301,
+https://www.daromatours.com/post/על-יום-הכיפורים-וכוכבים,https://www.daromatours.com/articles/al-yom-hakipurim-vekochavim,301,
+https://www.daromatours.com/post/הדובה-הגדולה,https://www.daromatours.com/articles/haduba-hagdola,301,
+https://www.daromatours.com/post/על-כוכבים-וסוכות,https://www.daromatours.com/articles/al-kochavim-vesukot,301,
+https://www.daromatours.com/post/על-יום-פטירת-משה-רבנו-המן-הרשע-ואיך-שניהם-קשורים-לאסטרונומיה,https://www.daromatours.com/articles/al-yom-ptirat-moshe-rabenu,301,
+https://www.daromatours.com/post/התקבצות-הנדירה-של-צדק-ושבתאי,https://www.daromatours.com/articles/hitkabtsut-nedira-tzedek-shabtai,301,
+https://www.daromatours.com/post/על-גלקסיית-אנדרומדה,https://www.daromatours.com/articles/al-galaxiat-andromeda,301,
+https://www.daromatours.com/post/מתחילים-מבראשית,https://www.daromatours.com/articles/matchilim-mibereshit,301,
+https://www.daromatours.com/post/באנו-אור-לגרש-על-זיהום-אור,https://www.daromatours.com/articles/banu-or-legaresh-al-zihum-or,301,
+https://www.daromatours.com/post/ע-ש-ה-כ-ימ-ה-ו-כ-ס-יל-על-אוריון-הצייד-והפליאדות-חלק-א,https://www.daromatours.com/articles,301,"סלאג פגום/מקודד באתר המקור (ככל הנראה גרשיים שנשברו ב-URL); לא נכלל ברשימת המאמרים החדשה עד לאימות הכותרת האמיתית מול דרומה. מפנה זמנית לאינדקס"
+https://www.daromatours.com/post/ע-ש-ה-כ-ימ-ה-ו-כ-ס-יל-חלק-ב,https://www.daromatours.com/articles,301,"אותה בעיית סלאג פגום כמו לעיל; מפנה זמנית לאינדקס"
+https://www.daromatours.com/post/מטר-הפרסאידים-של-אוגוסט,https://www.daromatours.com/articles/meteor-perseids-august,301,
+https://www.daromatours.com/event-details/*,https://www.daromatours.com/festival,301,"כ-90 עמודי אירוע חד-פעמיים מ-2022 (תצפיות פתוחות במכתש רמון/גולן/דימונה, ODT, לילות קיץ קרירים בהר הנגב) - כולם ישנים ופגי תוקף. מבוצע Redirect גורף (wildcard) לעמוד הפסטיבל הנוכחי במקום מיפוי אחד-לאחד. ראו Caddyfile"
