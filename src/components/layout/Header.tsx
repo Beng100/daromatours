@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { mainNav } from '../../content/navigation';
 import { Button } from '../ui/Button';
@@ -9,6 +9,21 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const { pathname } = useLocation();
+  const [lastPathname, setLastPathname] = useState(pathname);
+
+  // Header persists across route changes (it lives outside <Outlet>), so any
+  // navigation — including the CTA button, which is a plain Link with no
+  // dedicated close handler — must close the mobile menu and dropdown.
+  // Otherwise the destination page (e.g. the contact/quote form) loads
+  // hidden behind the still-open nav panel. Resetting during render (React's
+  // documented pattern for "adjusting state on prop change") avoids the
+  // extra render pass a useEffect-based reset would cause.
+  if (pathname !== lastPathname) {
+    setLastPathname(pathname);
+    setMobileOpen(false);
+    setOpenDropdown(null);
+  }
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {

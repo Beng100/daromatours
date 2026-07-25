@@ -24,6 +24,47 @@ export const enterpriseFeature = {
   image: '/images/gallery/desert-camp-9.webp'
 };
 
+export const audienceSegments = [
+  {
+    title: 'לחברות ולארגוני הייטק',
+    description: 'ימי גיבוש, ריטריטים ואירועי דגל בהפקה מלאה — עם ניסיון בעבודה מול ארגונים גדולים.',
+    href: '/corporate',
+    image: '/images/gallery/desert-camp-9.webp'
+  },
+  {
+    title: 'למשפחות ולזוגות',
+    description: 'תצפיות כוכבים, אירוח VIP וטיולי שטח — לחוויה פרטית ואינטימית במדבר.',
+    href: '/attractions',
+    image: '/images/hero/hero-5.webp'
+  },
+  {
+    title: 'למוסדות חינוך ולצה״ל',
+    description: 'פלנטריום נייד, תצפיות מודרכות ופעילויות שטח המותאמות לקבוצות גדולות.',
+    href: '/education',
+    image: '/images/attractions/attraction-3.webp'
+  }
+];
+
+export const processSteps = [
+  { title: 'מספרים לנו מה אתם מחפשים', description: 'שיחה קצרה או שאלון אפיון — גודל קבוצה, תאריך ותקציב.' },
+  { title: 'מקבלים הצעה מותאמת אישית', description: 'אנחנו בונים חוויה שלמה: פעילות, אירוח, קייטרינג ולוגיסטיקה.' },
+  { title: 'אתם רק מגיעים', description: 'הצוות שלנו מנהל את כל הפרטים בשטח, מקצה לקצה.' }
+];
+
+export const galleryPreview = {
+  heading: 'רגעים אמיתיים מהשטח',
+  description: 'טעימה מגלריית האירועים והפעילויות של דרומה.',
+  cta: 'לכל הגלריה',
+  images: [
+    { src: '/images/hero/hero-1.webp', alt: 'אירוח מדברי בשקיעה' },
+    { src: '/images/gallery/desert-camp-2.webp', alt: 'יום גיבוש לחברה במדבר' },
+    { src: '/images/hero/hero-skies.webp', alt: 'תצפית כוכבים של דרומה' },
+    { src: '/images/gallery/desert-camp-6.webp', alt: 'ישיבה סביב מדורה' },
+    { src: '/images/attractions/attraction-1.webp', alt: 'פעילות שטח של דרומה' },
+    { src: '/images/gallery/desert-camp-11.webp', alt: 'קבוצה נהנית באירוע דרומה' }
+  ]
+};
+
 export const homeHighlights = [
   {
     title: 'הפקות אירועים בשטח',
