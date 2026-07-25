@@ -1,10 +1,10 @@
-import { ArrowLeft, Users } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Users } from 'lucide-react';
 import { useSeo } from '../hooks/useSeo';
 import { Section, SectionHeading } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Breadcrumbs } from '../components/ui/Breadcrumbs';
-import { corporatePage, corporateAudiences } from '../content/corporate';
+import { corporatePage, corporateAudiences, corporateDifferentiators } from '../content/corporate';
 import { attractions } from '../content/attractions';
 
 export default function Corporate() {
@@ -57,6 +57,21 @@ export default function Corporate() {
       </Section>
 
       <Section tone="sand">
+        <SectionHeading eyebrow="למה דרומה" title="מה מבדיל אותנו עבור ארגונים" />
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {corporateDifferentiators.map((item) => (
+            <Card key={item.title} className="flex items-start gap-3 p-5">
+              <CheckCircle2 size={20} className="mt-0.5 shrink-0 text-ember-500" aria-hidden="true" />
+              <div>
+                <h3 className="font-semibold text-night-800">{item.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-night-500">{item.description}</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
         <SectionHeading eyebrow="איך זה עובד" title={corporatePage.processHeading} />
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {corporatePage.process.map((paragraph, index) => (
@@ -68,7 +83,7 @@ export default function Corporate() {
         </div>
       </Section>
 
-      <Section>
+      <Section tone="sand">
         <SectionHeading eyebrow="מה אפשר לשלב" title="פעילויות מומלצות ליום גיבוש" />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {relevantActivities.map((attraction) => (

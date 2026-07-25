@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from '../ui/SocialIcons';
 import { footerNavPrimary, footerNavSecondary } from '../../content/navigation';
 import { business } from '../../config/business';
+import { Logo } from '../ui/Logo';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -11,20 +12,7 @@ export function Footer() {
     <footer className="bg-night-800 text-sand-100">
       <div className="container grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/logo/daroma-logo.webp"
-              alt={business.brandFull}
-              className="h-12 w-12 rounded-full object-cover"
-              width={48}
-              height={48}
-              loading="lazy"
-            />
-            <div>
-              <p className="font-display text-lg font-bold text-white">{business.brandName}</p>
-              <p className="text-xs uppercase tracking-[0.15em] text-ember-200">{business.positioningEnglish}</p>
-            </div>
-          </div>
+          <Logo variant="light" />
           <p className="mt-4 text-sm leading-relaxed text-sand-200">
             הפקות אירועי יוקרה במדבר לחברות מובילות וארגוני הייטק — מהרעיון ועד הביצוע בשטח.
           </p>

@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { mainNav } from '../../content/navigation';
-import { business } from '../../config/business';
 import { Button } from '../ui/Button';
+import { Logo } from '../ui/Logo';
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -40,12 +40,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-sand-200 bg-white/95 backdrop-blur">
       <div className="container flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
-          <img src="/images/logo/daroma-logo.webp" alt={business.brandFull} className="h-12 w-12 rounded-full object-cover" width={48} height={48} />
-          <span className="flex flex-col leading-tight">
-            <span className="font-display text-lg font-bold text-night-800">{business.brandName}</span>
-            <span className="text-xs font-medium text-ember-500">{business.brandTagline}</span>
-          </span>
+        <Link to="/" onClick={() => setMobileOpen(false)}>
+          <Logo />
         </Link>
 
         <nav aria-label="ניווט ראשי" className="hidden items-center gap-1 lg:flex" ref={dropdownRef}>

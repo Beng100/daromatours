@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8A23B" />
+      <stop offset="1" stop-color="#C4602A" />
+    </linearGradient>
+    <linearGradient id="dune1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A64C1F" />
+      <stop offset="1" stop-color="#C4602A" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="32" fill="#241E1A" />
+  <circle cx="15" cy="15" r="1.3" fill="#F5E7D0" opacity="0.85" />
+  <circle cx="48" cy="13" r="1" fill="#F5E7D0" opacity="0.6" />
+  <circle cx="52" cy="23" r="0.8" fill="#F5E7D0" opacity="0.5" />
+  <circle cx="32" cy="28" r="10" fill="url(#sun)" />
+  <path d="M-2 42 Q 16 30 32 37 T 66 35 V66 H-2 Z" fill="#181310" />
+  <path d="M-2 47 Q 18 38 32 43 T 66 41 V66 H-2 Z" fill="url(#dune1)" />
+</svg>

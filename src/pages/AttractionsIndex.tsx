@@ -18,8 +18,8 @@ export default function AttractionsIndex() {
       <Section className="pt-0">
         <SectionHeading
           eyebrow="אטרקציות וחוויות"
-          title="האטרקציות הכי שוות מחכות ממש כאן"
-          description="ממכתש רמון ועד רמת הגולן – מגוון פעילויות שאפשר לשלב לחוויה מלאה, לקבוצה, למשפחה או לזוגיים."
+          title="חוויות מדבר לכל אירוע וקהל"
+          description="ממכתש רמון ועד רמת הגולן — מגוון פעילויות ברמה גבוהה שאפשר לשלב לחוויה מלאה: לאירוע חברה, לקבוצה, למשפחה או לזוגיים."
         />
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
